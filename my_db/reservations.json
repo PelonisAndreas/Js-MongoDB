@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "6497803d5387f5564b6dc47c"
+  },
+  "id": "e467e0b0-8d00-4c69-991f-96a64b42713d",
+  "seats": [
+    24,
+    25,
+    26,
+    27
+  ],
+  "username": "user2",
+  "eventname": "event1",
+  "total_price": 40,
+  "ticket_amount": 4,
+  "ticket_type": "normal"
+},{
+  "_id": {
+    "$oid": "6497804e5387f5564b6dc47d"
+  },
+  "id": "e88a2e40-cbb0-4891-be8d-6b447c461faf",
+  "seats": [
+    67
+  ],
+  "username": "user3",
+  "eventname": "event2",
+  "total_price": 30,
+  "ticket_amount": 1,
+  "ticket_type": "premium"
+}]

@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "64977f4e5387f5564b6dc478"
+  },
+  "name": "event1",
+  "active": "1",
+  "date": "25/08/2023",
+  "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi etiam dignissim diam quis enim lobortis. Molestie a iaculis at erat. Sed odio morbi quis commodo odio aenean sed. Et netus et malesuada fames ac. Massa sed elementum tempus egestas sed. In iaculis nunc sed augue lacus viverra vitae congue eu. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. ",
+  "hours": "16:00-00:30",
+  "url": "https://www.athensvoice.gr/images/1074x600/jpg/sites/default/files/article/2022/07/01/dsc_7283.jpg",
+  "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12587.032943206194!2d23.6910567!3d37.9360781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bc15fcfb2571%3A0x810217b8edb4a79f!2sFaliro%20Coastal%20Zone%20Olympic%20Complex!5e0!3m2!1sen!2sgr!4v1687650115438!5m2!1sen!2sgr"
+},{
+  "_id": {
+    "$oid": "64977faa5387f5564b6dc479"
+  },
+  "name": "event2",
+  "active": "1",
+  "date": "04/07/2023",
+  "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi etiam dignissim diam quis enim lobortis. Molestie a iaculis at erat. Sed odio morbi quis commodo odio aenean sed. Et netus et malesuada fames ac. Massa sed elementum tempus egestas sed. In iaculis nunc sed augue lacus viverra vitae congue eu. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Quam nulla porttitor massa id. Velit scelerisque in dictum non consectetur a erat nam. Turpis nunc eget lorem dolor sed viverra ipsum nunc. Vestibulum morbi blandit cursus risus at ultrices. Ullamcorper dignissim cras tincidunt lobortis. Pretium quam vulputate dignissim suspendisse in. Nibh cras pulvinar mattis nunc. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a. Viverra vitae congue eu consequat. Tincidunt vitae semper quis lectus nulla at volutpat diam ut.",
+  "hours": "12:00-23:00",
+  "url": "https://www.sport24.gr/img/4790/8885955/121000/fb1200/1200/game1.jpg",
+  "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12587.032943206194!2d23.6910567!3d37.9360781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bc15fcfb2571%3A0x810217b8edb4a79f!2sFaliro%20Coastal%20Zone%20Olympic%20Complex!5e0!3m2!1sen!2sgr!4v1687650115438!5m2!1sen!2sgr"
+},{
+  "_id": {
+    "$oid": "64977ff25387f5564b6dc47a"
+  },
+  "name": "event3",
+  "active": "0",
+  "date": "23/05/2023",
+  "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi etiam dignissim diam quis enim lobortis. Molestie a iaculis at erat. Sed odio morbi quis commodo odio aenean sed. Et netus et malesuada fames ac. Massa sed elementum tempus egestas sed. In iaculis nunc sed augue lacus viverra vitae congue eu. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Quam nulla porttitor massa id. Velit scelerisque in dictum non consectetur a erat nam. Turpis nunc eget lorem dolor sed viverra ipsum nunc. Vestibulum morbi blandit cursus risus at ultrices. Ullamcorper dignissim cras tincidunt lobortis. Pretium quam vulputate dignissim suspendisse in. Nibh cras pulvinar mattis nunc. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a. Viverra vitae congue eu consequat. Tincidunt vitae semper quis",
+  "hours": "19:00-00:30",
+  "url": "https://s.yimg.com/uu/api/res/1.2/l915AIHABnk4rR4pgeKBAg--~B/Zmk9ZmlsbDtoPTYxNDt3PTg3NTthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2021-05/0a920f80-be69-11eb-a7d6-989c5ebaba1b.cf.jpg",
+  "map_url": "https://www.google.com/maps/d/embed?mid=1TAAr1UaL9uMp8LuducGfczYLUR0&hl=en&ehbc=2E312F"
+},{
+  "_id": {
+    "$oid": "649841433d0d7dd4e5e7e5e3"
+  },
+  "name": "test_event",
+  "active": "1",
+  "date": "30/06/2023",
+  "info": "test",
+  "hours": "16:00-00:30",
+  "url": "https://www.athensvoice.gr/images/1074x600/jpg/sites/default/files/article/2022/07/01/dsc_7283.jpg",
+  "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12587.032943206194!2d23.6910567!3d37.9360781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bc15fcfb2571%3A0x810217b8edb4a79f!2sFaliro%20Coastal%20Zone%20Olympic%20Complex!5e0!3m2!1sen!2sgr!4v1687650115438!5m2!1sen!2sgr"
+}]

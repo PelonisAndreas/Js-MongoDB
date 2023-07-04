@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/styles.css">
+        <script src="script.js" defer></script>
+        
+
+    </head>
+
+    <body id="containerBody" onload="onload()">
+
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Gamescom_logo_%282014-2022%29.svg/2560px-Gamescom_logo_%282014-2022%29.svg.png" width="125" height="110"><div class="header"></div>
+        </header>
+
+        <div class="topnav" id="nav">
+            <ul>
+                <a href="homeAdmin.html">Home</a>
+                <% if(username=='admin') { %>
+                    <a onclick="window.location.href = 'updateUsers.html'">Update Users</a>
+                    <a onclick="window.location.href = 'updateEvent.html'">Update Events</a>
+                    <a onclick="window.location.href = 'updateReservation.html'">Update Reservations</a>
+                    <a onclick="window.location.href = 'updateAbout.html'">Update Info</a>
+                    <a onclick="window.location.href = '/'" style="color: rgb(226, 86, 43);">Home User</a>
+                    <% } %>
+                <% if (loggedIn) { %>
+                    <a id="signup" href="/logout">Log Out</a>
+                    <a id="signup">Username: <%= username %></a>
+                  <% } else { %>
+                    <a id="signup" onclick="document.getElementById('id02').style.display='block'">Log In</a>
+                    <a id="signup" onclick="document.getElementById('id01').style.display='block'">Sign Up</a>
+                  <% } %>
+                  <a id="mode" onclick="darkmode()"></a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+            </ul>
+          </div>
+
+        <div class="wrapper">
+            <div class="info-box">
+                <h1>PROFILE</h1>
+                <p>THIS IS THE USER'S PROFILE</p>
+                <form class="profile-form" action="/updateUserProfile" method="post">
+                  <label for="name">Username:</label>
+                  <input type="text" name="username" value="<%= user.username %>" required readonly>
+
+                  <label for="email">Full Name:</label>
+                  <input type="text" name="name" value="<%= user.name %>" required>
+            
+                  <label for="email">Email:</label>
+                  <input type="text" name="email" value="<%= user.email %>" required>
+            
+                  <label for="password">Password:</label>
+                  <input type="password" name="password" value="<%= user.password %>" required readonly>
+            
+                  <label for="phone">Phone number:</label>
+                  <input type="text" name="phone" value="<%= user.phone %>" required>
+            
+                  <button type="submit">Update Profile</button>
+                </form>
+              </div>
+        </div>
+
+        <footer>
+            <div class="flex-container">
+                <div style="flex-grow: 2; align-self: center;">
+                    <h1 id="footer">Social Media:</h1>
+                    <a href="https://www.facebook.com/ds.unipi.gr" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/dsunipigr" class="fa fa-twitter"></a>
+                    <a href="https://instagram.com/unipi.ds?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a>
+                </div>
+                <div style="flex-grow: 2;align-self: center;">                           
+                    <h1 id="footer">Στοιχεια Επικοινωνιας</h1>
+                    <p> Διευθυνση: Δρομος, Πολη, Χωρα</p>
+                    <p>Τηλεφωνο:<a href="tel:+1234-567-8910"> 123-456-7899</a> </p>
+                    <p>E-mail:<a href="mailto: someone@example.com"> someone@example.com</a></p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

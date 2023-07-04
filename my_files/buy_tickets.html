@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles_ticket.css" />
+        <title>Seat Booking</title>
+    </head>
+    <body>
+        <div class="ticket-container">
+            <label for="ticket">Pick a Ticket1 Type</label>
+            <input type="radio" name="ticket" id="ticket1" value="10" checked="checked">Normal
+            <input type="radio" name="ticket" id="ticket2" value="20">Extra
+            <input type="radio" name="ticket" id="ticket3" value="30">Premium
+
+            <select id="attendees">
+                <option value="1">1 Attendees</option>
+                <option value="2">2 Attendees</option>
+                <option value="3">3 Attendees</option>
+                <option value="4">4 Attendees</option>
+            </select>
+
+        </div>
+    
+            <ul class="showcase">
+                <li>
+                    <div class="seat"></div>
+                    <small>N/A</small>
+                </li>
+    
+                <li>
+                    <div class="seat selected"></div>
+                    <small>Selected</small>
+                </li>
+    
+                <li>
+                    <div class="seat occupied"></div>
+                    <small>Occupied</small>
+                </li>
+    
+            </ul>
+    
+            <div class="container">
+                <div class="screen"></div>
+    
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+    
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+    
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+    
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat occupied"></div>
+                </div>
+    
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+    
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupied"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+    
+            </div>
+        
+        <button class="button" onclick="closePopup()">Close</button>
+        <br>
+        <button class="button" onclick="final_buy().then(self.close)">Buy Tickets</button>
+        
+        <p class="text">
+            You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
+        </p>
+
+        <script src="script_ticket.js" defer></script>
+        
+       
+    </body>
+</html>

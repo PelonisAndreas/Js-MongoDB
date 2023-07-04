@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="/styles.css">
+      <script src="script.js" defer></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+    </head>
+
+    <body id="containerBody" onload="onload()">
+
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Gamescom_logo_%282014-2022%29.svg/2560px-Gamescom_logo_%282014-2022%29.svg.png" width="125" height="110"><div class="header"></div>
+        </header>
+
+        <div class="topnav" id="nav">
+            <ul>
+                <a href="/">Home</a>
+                <a href="About.html">About</a>
+                <a href="events.html">Events</a>
+                <a class="active">Reviews</a>
+                <a href="eventSearch.html?searchQuery=''">Search Event</a>
+                <% if (username=='admin') { %>
+                  <a href="homeAdmin.html" style="color: rgb(226, 86, 43);">Home Admin</a>
+                <% } %>
+                <% if (loggedIn) { %>
+                    <a id="signup" href="/logout">Log Out</a>
+                    <a id="signup" href="/profile.html">Username: <%= username %></a>
+                  <% } else { %>
+                    <a id="signup" onclick="document.getElementById('id02').style.display='block'">Log In</a>
+                    <a id="signup" onclick="document.getElementById('id01').style.display='block'">Sign Up</a>
+                  <% } %>
+                  <a id="mode" onclick="darkmode()"></a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+            </ul>
+          </div>
+
+        <div class="wrapper">
+            <div class="info-box">
+                <h1>The user is logged in</h1>
+                <p>A session is created for the user</p>
+                <p>THIS PAGE CAN ONLY BEEN SEEN IF THE USER IS LOGGED IN AND HAS A VALID SESSION</p>
+            </div>
+
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">x</span>
+                <form class="modal-content" action="/sign_up" method="post">
+                  <div class="container">
+                    <h1>Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+              
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+              
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                    <!--
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                    -->
+                    <label for="phone"><b>Phone number</b></label>
+                    <input type="text" placeholder="Enter Phone number" name="phone" id="phone" required>
+              
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+              
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+              
+                    <div class="clearfix">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <button type="submit" class="signup">Sign Up</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <!-- LOGIN -->
+              <div id="id02" class="modal">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">X</span>
+                <form class="modal-content" action="/log_in" method="post">
+                    <div class="container">
+                    <h1>Log in</h1>
+                    <p>Please fill in the blanks to Log in</p>
+                    <hr>
+                    
+
+                <!-- log in Modal -->
+                    <label for="name"><b>Username:</b></label>
+                    <input type="text" placeholder="Type your Username" name="name" id="name" required>
+
+                    <label for="password"><b>Password:</b></label>
+                    <input type="password" placeholder="Type your Password" name="password" id="password" required>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signup">Log In</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="flex-container">
+                <div style="flex-grow: 2; align-self: center;">
+                    <h1 id="footer">Social Media:</h1>
+                    <a href="https://www.facebook.com/ds.unipi.gr" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/dsunipigr" class="fa fa-twitter"></a>
+                    <a href="https://instagram.com/unipi.ds?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a>
+                </div>
+                <div style="flex-grow: 2;align-self: center;">                           
+                    <h1 id="footer">Στοιχεια Επικοινωνιας</h1>
+                    <p> Διευθυνση: Δρομος, Πολη, Χωρα</p>
+                    <p>Τηλεφωνο:<a href="tel:+1234-567-8910"> 123-456-7899</a> </p>
+                    <p>E-mail:<a href="mailto: someone@example.com"> someone@example.com</a></p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

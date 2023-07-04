@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "6493485b207bab2c8c08a2ec"
+  },
+  "username": "admin",
+  "name": "admin",
+  "email": "admin@admin.com",
+  "password": "admin123",
+  "phone": "12345"
+},{
+  "_id": {
+    "$oid": "6495839f27d05065ed96f533"
+  },
+  "username": "user2",
+  "name": "user2",
+  "email": "user2@test",
+  "password": "user2",
+  "phone": "12345"
+},{
+  "_id": {
+    "$oid": "64977e7b5387f5564b6dc476"
+  },
+  "username": "user3",
+  "name": "user3",
+  "email": "user3@test",
+  "password": "user3",
+  "phone": "12345"
+},{
+  "_id": {
+    "$oid": "64977ea95387f5564b6dc477"
+  },
+  "username": "user4",
+  "name": "user4",
+  "email": "user4@test",
+  "password": "user4",
+  "phone": "12345"
+},{
+  "_id": {
+    "$oid": "64983d9f3d0d7dd4e5e7e5e2"
+  },
+  "username": "made_user",
+  "name": "made_user",
+  "email": "made_user@123.com",
+  "password": "made_user",
+  "phone": "12345"
+}]
